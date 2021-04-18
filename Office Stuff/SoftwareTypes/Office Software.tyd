@@ -1,4 +1,284 @@
 SoftwareType
-        {
-            Name
-        }
+	{
+	Name			"Office Software"
+	Category		Productivity
+	Description		"For all your officing needs"
+	Random			0.2
+	OptimalDevTime	35
+	OSSupport		[ Computer; Phone ]
+	SubmarketNames	[ "Word processing"; "Spreadsheets"; "Presentation" ]
+	Categories
+		[
+			{
+			Name		"Word Processor"
+			Description	"Process words to make documents"
+			Popularity	0.3
+			Retention	36
+			TimeScale	0.2
+			Iterative	1
+			IdealPrice	40
+			Submarkets	[ 5; 1; 1 ]
+			NameGenerator		Office
+			}
+            {
+            Name		Publisher
+            Description	"Make documents based on visuals instead of words."
+            Popularity	0.4
+            Retention	24
+            TimeScale	0.2
+            Iterative	1
+            IdealPrice	45
+            Submarkets	[ 3; 4; 4 ]
+			NameGenerator		Office
+            }
+            {
+            Name	    Spreadsheet
+            Description	"Make documents with numbers instead of word processing"
+            Popularity	0.3
+            Retention	36
+            TimeScale	0.4
+            Iterative	1
+            IdealPrice	47
+            Submarkets	[ 3; 5; 2 ]
+			NameGenerator		Office
+            }
+            {
+            Name	    Presentation
+            Description	"Make documents based on visuals instead of words."
+            Popularity	0.2
+            Retention	12
+            TimeScale	0.2
+            Iterative	1
+            IdealPrice	38
+            Submarkets	[ 3; 2; 4 ]
+			NameGenerator		Office
+            }
+            {
+            Name		"Email Client"
+            Description	"Send letters online instead of by mail."
+            Popularity	0.5
+            Retention	36
+            TimeScale	0.1
+            Iterative	1
+            IdealPrice	44
+            Submarkets	[ 4; 3; 2 ]
+			NameGenerator		Office
+            }
+		]
+		Features
+		[
+			{
+			Name			Interface
+			Spec			2D
+			Description 	"Can't make office documents if you can't see them"
+			DevTime			5
+			CodeArt			0.75
+			Dependencies	"2D Editor"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Equation rendering"
+					Description "y=(1/(σ·sqrt(2·π)))e^(-(x-μ)^2/(2·σ^2))... Doesn't look good, does it?"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 1 ]
+					}
+					{
+					Name		"Auto page layout"
+					Description "I.e. spending 30 minutes trying to make the picture fit in the place"
+					DevTime		3
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Charts and graphs"
+					DevTime		3
+					Level		2
+					CodeArt		0.5
+					Submarkets	[ 1; 4; 1 ]
+					}
+					{
+					Name		"Clipart"
+					Description "*Stick figure pointing at chart*"
+					DevTime		4
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 3 ]
+					}
+					{
+					Name		"Animations"
+					Description "Just slides and text gliding in from every which way and angle"
+					DevTime		3
+					Level		1
+					CodeArt		0.8
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Slide templates"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Vector graphics"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 3 ]
+					}
+					{
+					Name		"Log in screen"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 4; 2; 1 ]
+					}
+					{
+					Name		"Virtual assistant"
+					Description "Helps bug reports slowly resolve on their own"
+					DevTime		4
+					Level		3
+					CodeArt		0
+					Submarkets	0
+					Script_EndOfDay
+					"/Scripts/VAS.txt"
+					}
+				]
+			}
+			{
+			Name		System
+			Spec		System
+			Optional	True
+			Description ""
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Spellcheck"
+					Description "Make anyone seem even more competent"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Interactive slides"
+					Description "At this point you might as well make a website"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Dictionary"
+					Description "Make anyone seem competent"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Thesaurus"
+					Description "Make anyone seem more competent"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Financial math library"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Geometric math library"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Date manipulation"
+					Description "What is today minus 10. June 2014? You're looking at it"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Scripting"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Track users"
+					Description "Sell users Usernames/Passwords and their data."
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					Script_EndOfDay
+					"/Scripts/SUDS.txt"
+					}
+				]
+			}
+			{
+			Name		Network
+			Spec		Network
+			Optional	True
+			Description ""
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Cloud backup"
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Database connections"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name			"Audio playback"
+			Spec			Audio
+			Optional		True
+			Description ""
+			Dependencies	"Audio Tool"
+			DevTime			2
+			CodeArt			1
+			Submarkets		[ 0; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Sound effect library"
+					Description "Bring some much unneeded excitement to your presentations!"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+		]    
+    }
