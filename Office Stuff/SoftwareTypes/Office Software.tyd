@@ -8,18 +8,18 @@ SoftwareType
 	OSSupport		[ Computer; Phone ]
 	SubmarketNames	[ "Word processing"; "Spreadsheets"; "Presentation" ]
 	Categories
-		[
-			{
-			Name		"Word Processor"
-			Description	"Process words to make documents"
-			Popularity	0.3
-			Retention	36
-			TimeScale	0.2
-			Iterative	1
-			IdealPrice	40
-			Submarkets	[ 5; 1; 1 ]
-			NameGenerator		Office
-			}
+	    [
+	    {
+	    Name	"Word Processor"
+	    Description	"Process words to make documents"
+	    Popularity	0.3
+	    Retention	36
+	    TimeScale	0.2
+	    Iterative	1
+	    IdealPrice	40
+	    Submarkets	[ 5; 1; 1 ]
+	    NameGenerator		Office
+	    }
             {
             Name		Publisher
             Description	"Make documents based on visuals instead of words."
