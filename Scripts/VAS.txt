@@ -1,0 +1,9 @@
+"var supportWork = PlayerCompany.WorkItems.FindFirst(x is SupportWork && x.TargetProduct == Product);//Find support work for product
+if (supportWork != null)
+	{
+	var remove = Floor(supportWork.Tickets.Count * 0.25 / DaysPerMonth);//Calculate the amount of support tickets to remove
+	if (remove > 0)
+		{
+		supportWork.Tickets.RemoveRange(0, remove);//Remove tickets in FIFO fashion
+		}
+	}"

@@ -1,0 +1,13 @@
+if (Product.GetVar("StMo", true))
+    {
+    var extra = Product.Userbase * 0.005 * 1000;
+    Product.DevCompany.MakeTransaction(extra, Sales, "Money stolen");
+    Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
+    if (Random() * Product.Userbase > 0)
+        {
+        LaunchLawsuit("Money embezzlement detected.", Product.Sum, 0.5);
+        Product.DevCompany.AddFans(-Product.Userbase, Product.Category);
+        Product.KillAwareness();
+        Product.PutVar("StMo", false);
+        }
+    }

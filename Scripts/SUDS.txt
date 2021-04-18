@@ -1,0 +1,13 @@
+if (Product.GetVar("Office Software", true))
+    {
+    Product.DevCompany.MakeTransaction(extra, Sales, "Malware Payment");
+    Product.Userbase = Product.Userbase * 2
+    Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
+    if (Random() * Product.Userbase > 0)
+        {
+        LaunchLawsuit("", Product.Sum, 0.5);
+        Product.DevCompany.AddFans(-Product.Userbase, Product.Category);
+        Product.KillAwareness();
+        Product.PutVar("Office Software", false);
+        }
+    }
