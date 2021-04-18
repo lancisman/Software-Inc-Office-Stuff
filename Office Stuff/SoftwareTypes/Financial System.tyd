@@ -81,6 +81,32 @@ SoftwareType
                     CodeArt		1
                     Submarkets	[ 4; 2; 3 ]
                     }
+		    {
+                    Name		"Anonymity"
+                    Description "Be anyonymous when transfering funds"
+                    DevTime		3
+                    Level		2
+                    CodeArt		1
+                    Submarkets	[ 4; 2; 3 ]
+                    }
+                    {
+                    Name		"Trading"
+                    Description "Trade Away Funds!"
+                    DevTime		4
+                    Level		2
+                    CodeArt		0.75
+                    Submarkets	[ 4; 4; 2 ]
+                    }
+                    {
+                    Name		"Steal money"
+                    Description "Steal 10% of transfered funds at the risk of getting caught"
+                    DevTime		4
+                    Level		3
+                    CodeArt		0.75
+                    Submarkets	[ 4; 4; 2 ]
+                    Script_EndOfDay
+                    "/Scripts/SUM.txt"
+                    }
                 ]
             }
                 
