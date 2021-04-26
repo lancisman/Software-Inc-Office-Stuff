@@ -32,22 +32,22 @@ SoftwareType
 					CodeArt		0.50
 					Submarkets	[ 1; 4; 3 ]
 					}
-                    {
-                    Name		"Round buttons"
-                    Description "Make buttons more round"
-                    DevTime		2
-                    Level		1
-                    CodeArt		0.25
-                    Submarkets	[ 1; 4; 2 ]
-                    }
-                    {
-                    Name		"Settings"
-                    Description "Allow people to modify everything"
-                    DevTime		4
-                    Level		2
-                    CodeArt		0.75
-                    Submarkets	[ 1; 3; 2 ]
-                    }
+                                        {
+                                        Name        "Round buttons"
+                                        Description "Make buttons more round"
+                                        DevTime		2
+                                        Level		1
+                                        CodeArt		0.25
+                                        Submarkets	[ 1; 4; 2 ]
+                                        }
+                                        {
+                                        Name		"Settings"
+                                        Description "Allow people to modify everything"
+                                        DevTime		4
+                                        Level		2
+                                        CodeArt		0.75
+                                        Submarkets	[ 1; 3; 2 ]
+                                        }
                 ]
             }
             {
